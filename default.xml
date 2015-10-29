@@ -14,9 +14,6 @@
   <remote name="antdroid"
            fetch="https://github.com/Ant-Droid/" />
 
-  <remote name="benzo"
-           fetch="https://github.com/BenzoRom/" />          
-
   <default revision="refs/tags/android-6.0.0_r1"
            remote="aosp"
            sync-c="true" 
