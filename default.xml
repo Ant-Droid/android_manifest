@@ -15,6 +15,8 @@
            remote="aosp"
            sync-j="4" />
 
+<project path="external/bsdiff" name="platform_external_bsdiff" groups="pdk" remote="antdroid" revision="600" />
+
   <!-- Pure Repo's -->
   <project path="build" name="android_build" groups="pdk" remote="nexus" revision="mm" >
     <copyfile src="core/root.mk" dest="Makefile" />
