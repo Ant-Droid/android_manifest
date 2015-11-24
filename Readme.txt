@@ -1,6 +1,6 @@
 To initialize your local repository, use this command:
 
-repo init -u https://github.com/Ant-Droid/android_manifest.git -b mm
+repo init -u https://github.com/Ant-Droid/android_manifest.git -b 600
 Then to sync source, use this command:
 
 repo sync
