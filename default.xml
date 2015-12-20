@@ -17,10 +17,15 @@
            sync-j="4" />
 
   <!-- Pure Repo's -->
+  <!--
   <project path="build" name="android_build" groups="pdk" remote="nexus" revision="mm" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-
+  -->
+  <project path="build" name="android_build" groups="pdk" remote="ant" revision="mm600" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  
   <project path="manifest" name="android_manifest" remote="nexus" revision="mm" />
   <project path="device/moto/shamu" name="android_device_moto_shamu" groups="device,shamu,broadcom_pdk" remote="nexus" revision="mm" />
   <project path="external/busybox" name="android_external_busybox" remote="nexus" revision="mm" />
@@ -46,7 +51,7 @@
   <project path="packages/apps/LockClock" name="android_packages_apps_LockClock" remote="nexus" revision="mm" />
   <project path="packages/apps/PackageInstaller" name="android_packages_apps_PackageInstaller" groups="pdk-fs" remote="nexus" revision="mm" />
   <project path="packages/apps/PureNexusSettings" name="android_packages_apps_PureNexusSettings" remote="nexus" revision="mm" />
-  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="nexus" revision="mm" />
+  <!-- <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="nexus" revision="mm" /> -->
   <project path="packages/apps/TvSettings" name="android_packages_apps_TvSettings" groups="generic_fs" remote="nexus" revision="mm" />
   <project path="packages/apps/WallpaperPicker" name="packages_apps_WallpaperPicker" remote="nexus" revision="mm" />
   <project path="packages/inputmethods/LatinIME" name="android_packages_inputmethods_LatinIME" remote="nexus" revision="mm" />
@@ -58,13 +63,16 @@
   <project path="system/core" name="android_system_core" groups="pdk" remote="nexus" revision="mm" />
   <project path="system/extras" name="android_system_extras" groups="pdk" remote="nexus" revision="mm" />
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="nexus" revision="mm" />
-  <project path="vendor/nexus" name="android_vendor_nexus" remote="nexus" revision="mm" />
+  
+  <!-- ANT -->
+  <project path="vendor/nexus" name="android_vendor_nexus" remote="ant" revision="mm" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ant" revision="mm600" />
 
   <!-- CM -->
   <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" groups="pdk-fs" remote="cm" revision="cm-13.0" />
 
   <!-- Kernel Source -->
-  <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" groups="device,shamu,broadcom_pdk" remote="nexus" revision="mm" />
+  <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" groups="device,shamu,broadcom_pdk" remote="ant" revision="mm600" />
 
   <!-- Proprietary Vendors -->
   <project path="vendor/moto" name="proprietary_vendor_moto" remote="nexus" revision="mm" />
