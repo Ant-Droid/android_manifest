@@ -5,6 +5,9 @@
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com" />
 
+  <remote name="ant"
+           fetch="https://github.com/Ant-Droid/" /> 
+           
   <remote name="nexus"
            fetch="https://github.com/PureNexus/" /> 
 
