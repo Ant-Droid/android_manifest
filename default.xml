@@ -9,7 +9,7 @@
            fetch="https://github.com/Ant-Droid/" /> 
            
   <remote name="nexus"
-           fetch="https://github.com/PureNexus/" /> 
+           fetch="https://github.com/PureNexusProject/" /> 
 
   <remote  name="cm"
            fetch="https://github.com/CyanogenMod"
