@@ -76,8 +76,11 @@
   <project path="packages/apps/Gallery2" name="android_packages_apps_Gallery2" groups="pdk-fs" remote="cm" revision="cm-13.0" />
 
   <!-- Kernel Source -->
+  <!--
   <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" groups="device,shamu,broadcom_pdk" remote="ant" revision="mm601" />
-
+  -->
+  <project path="kernel/moto/shamu" name="android_kernel_moto_shamu" groups="device,shamu,broadcom_pdk" remote="pure" revision="mm" />
+  
   <!-- Proprietary Vendors -->
   <project path="vendor/moto" name="proprietary_vendor_moto" remote="nexus" revision="mm" />
 
